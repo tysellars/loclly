@@ -9,8 +9,8 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Freelancer - Start Bootstrap Theme</title>
-
+    <title>Loclly - find what's happening around!</title>
+    <script src="js/script.js"></script>
     <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
@@ -54,13 +54,13 @@
                         <a href="#page-top"></a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#portfolio">Search Event!</a>
+                        <a href="#portfolio">Search an Event</a>
                     </li>
                     <li class="page-scroll">
                         <a href="#about">About</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#contact">Contact</a>
+                        <a href="#contact">Create an Event</a>
                     </li>
                 </ul>
             </div>
@@ -79,7 +79,7 @@
                     <p class="hashtagsSuggestions"></p>
                     <div class="col-lg-8 col-lg-offset-2 text-center">
                         <a href="#contact" class="btn btn-lg btn-outline">
-                        <i class="fa fa-download"></i> Create an Event!
+                        <i class="fa fa-download"></i> Create an Event
                     </a>
                     </div>
                 </div>
@@ -215,27 +215,30 @@
                             </div>
                         </div>
                         <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls"
-                        <table>
-                            <tr>
-                                <td>Price of the Event</td>
-                                <td><input type="range" class="form-control" name="price" id="price" min="0" max="1000" step="1"></td>
-                                <td><p class="help-block text-danger"></p></td>
-                            </tr>
-                        </table>
-                        </div>
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label>Date of the Event</label>
+                                <input type="date" class="form-control" placeholder="Date of Event" id="date" required data-validation-required-message="Please enter the date of this event.">
+                                <p class="help-block text-danger"></p>
+                            </div>
                         </div>
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label>Phone Number</label>
-                                <input type="tel" class="form-control" placeholder="Phone Number" id="phone" required data-validation-required-message="Please enter your phone number.">
+                                <label>Price</label>
+                                <input type="number" class="form-control" placeholder="Price of the Event" id="price" min="0" max="1000" required data-validation-required-message="Please enter the price of this event.">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label>Contact Number</label>
+                                <input type="tel" class="form-control" placeholder="Contact Number" id="phone" required data-validation-required-message="Please enter your phone number.">
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
                                 <label>Description</label>
-                                <textarea rows="5" class="form-control" placeholder="Short Description of the Event" id="message" required data-validation-required-message="Please enter a description."></textarea>
+                                <textarea rows="3" class="form-control" placeholder="Short Description of the Event" id="message" required data-validation-required-message="Please enter a description."></textarea>
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
