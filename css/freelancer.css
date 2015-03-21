@@ -8,6 +8,14 @@ body {
     overflow-x: hidden;
 }
 
+.event_title {
+    text-decoration: underline;
+}
+
+.events {
+    border: solid 1px black;
+}
+
 p {
     font-size: 20px;
 }
@@ -22,7 +30,7 @@ a:focus,
 a:active,
 a.active {
     outline: 0;
-    color: #FFFF00;
+    color: #18bc9c;
 }
 
 h1,
@@ -31,7 +39,7 @@ h3,
 h4,
 h5,
 h6 {
-    text-transform: uppercase;
+    
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
 }
@@ -63,7 +71,7 @@ hr.star-light {
 
 hr.star-light:after {
     color: #fff;
-    background-color: #18bc9c;
+    background-color: #6f5499;
 }
 
 hr.star-primary {
@@ -181,7 +189,7 @@ section h2 {
 
 section.success {
     color: #fff;
-    background: #18bc9c;
+    background: #6f5499;
 }
 
 @media(max-width:767px) {
