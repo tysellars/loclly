@@ -83,7 +83,7 @@
                 </div>
                         <ul class="list-inline">
                             <li>
-                                <a href="#" class="btn-social btn-outline">Hackathon</i></a>
+                                <a href="#portfolioModal6" class="btn-social btn-outline" class="portfolio-link" data-toggle="modal">Hackathon</a>
                             </li>
                             <li>
                                 <a href="#" class="btn-social btn-outline">Dance</a>
@@ -131,7 +131,7 @@
             </div>
     </section>
     <div class="container">
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
     <!-- Indicators -->
     <ol class="carousel-indicators">
       <li data-target="#myCarousel" data-slide-to="0"></li>
@@ -141,7 +141,7 @@
     </ol>
 
     <!-- Wrapper for slides -->
-    <div class="carousel-inner" role="listbox">
+    <div class="carousel-inner" role="listbox" >
       <div class="item active">
         <img src="img/resize.jpg" alt="Chania" width="100%" height="10px">
         <h2>BlueMix Hackathon at Saint Mary's University</h2>
@@ -203,7 +203,7 @@
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
                                 <label>Address</label>
-                                <input type="email" class="form-control" placeholder="Address" id="email" required data-validation-required-message="Please enter your location.">
+                                <input type="text" class="form-control" placeholder="Address" id="location" required data-validation-required-message="Please enter your location.">
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
@@ -223,8 +223,8 @@
                         </div>
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label>Contact Number</label>
-                                <input type="tel" class="form-control" placeholder="Contact Number" id="phone" required data-validation-required-message="Please enter your phone number.">
+                                <label>Email Address</label>
+                                <input type="email" class="form-control" placeholder="Email" id="email" required data-validation-required-message="Please enter your Email address.">
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
@@ -233,14 +233,19 @@
                                 <label>Description</label>
                                 <textarea rows="3" class="form-control" placeholder="Short Description" id="message" required data-validation-required-message="Please enter a description."></textarea>
                                 <p class="help-block text-danger"></p>
-                                <input maxlength="140">
                             </div>
                         </div>
-                        <br>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label>Keywords</label>
+                                <textarea rows="1" class="form-control" placeholder="Keywords (Separated by spaces)" id="hashTags" required data-validation-required-message="Please enter some keywords."></textarea>
+                                <p class="help-block text-danger"></p>
+                        </div>
+                        </div>
                         <div id="success"></div>
                         <div class="row">
                             <div class="form-group col-xs-12">
-                                <button type="submit" class="btn btn-success btn-lg">Create!</button>
+                                <button type="submit" class="btn btn-success btn-lg" onclick="createEvent()">Create!</button>
                             </div>
                         </div>
                     </form>
@@ -268,7 +273,7 @@
             </div>
         </div>
     </section>
-    <!-- Footer -->
+        <!-- Footer -->
     <footer class="text-center">
         <div class="footer-below">
             <div class="container">
@@ -288,6 +293,74 @@
         </a>
     </div>
 
+    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Here are the top Hacking Events</h2>
+                    
+                
+                    <h3>BlueMix Hackathon</h3>
+                    <p><strong>Address:</strong> Saint Mary’s University<br>
+                    <strong>Date:</strong> March 21-22, 2015<br>
+                    <strong>Ticket Price:</strong> $5 <strong>(sold out)</strong><br>
+                    Happy Hacking and Happy Tweeting #GBSUHack15<br></p>
+                     <ul class="list-inline">
+                            <li>
+                                <a href="#hack" class="btn-social btn-outline">Hackathon</i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn-social btn-outline">Education</a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn-social btn-outline">Brain Storm</a>
+                            </li>
+                     </ul>
+                   
+                    <h3>OneNS Hack</h3>
+                    <p><strong>Address:</strong> Saint Mary’s University<br>
+                    <strong>Date:</strong> March 27-28, 2015<br>
+                    <strong>Ticket Price:</strong> Free<br>
+                    The oneNS Coalition will design the challenge.<br> Students will have 24 hours to design their solution.</p>
+                    <ul class="list-inline">
+                            <li>
+                                <a href="#hack" class="btn-social btn-outline">Hackathon</i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn-social btn-outline">Education</a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn-social btn-outline">Brain Storm</a>
+                            </li>
+                    </ul>
+
+                    <h3>Open Data Hackathon</h3>
+                    <p><strong>Address:</strong> Volta - Halifax Start-up House
+                        <br>5415 Spring Garden Road, Halifax<br>
+                    <strong>Date:</strong> 13 September 2015 at 5:00 PM - 15 September 2015 at 5:00 <br>
+                    <strong>Ticket Price:</strong> Free- $50<br>
+                    Volta is hosting a 48-hour hackathon on September 14 and 15, 2015.<br> Through the Halifax Regional Municipality’s Open Data initiative,<br> developers will get access to municipal data that can be used to<br> build apps to solve community problems.</p>
+                    <ul class="list-inline">
+                            <li>
+                                <a href="#hack" class="btn-social btn-outline">Hackathon</i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn-social btn-outline">Brain Storm</a>
+                            </li>
+                    </ul>
+
+                                </div>
+                    </div>
+                </div>
+            </section>
+
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
 
@@ -302,6 +375,7 @@
     <!-- Contact Form JavaScript -->
     <script src="js/jqBootstrapValidation.js"></script>
     <script src="js/contact_me.js"></script>
+    <script src="js/createAnEvent.js"></script>
 
     <!-- Custom Theme JavaScript -->
     <script src="js/freelancer.js"></script>
