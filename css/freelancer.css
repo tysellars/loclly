@@ -3,7 +3,6 @@
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
-
 body {
     overflow-x: hidden;
 }
@@ -119,7 +118,7 @@ header .intro-text .skills {
 @media(min-width:768px) {
     header .container {
         padding-top: 200px;
-        padding-bottom: 30px;
+        padding-bottom: 92px;
     }
 
     header .intro-text .name {
@@ -471,3 +470,4 @@ footer .footer-below {
     display: none;
     opacity: 0;
 }
+
