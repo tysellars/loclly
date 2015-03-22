@@ -8,6 +8,14 @@ body {
     overflow-x: hidden;
 }
 
+.event_title {
+    text-decoration: underline;
+}
+
+.events {
+    border: solid 1px black;
+}
+
 p {
     font-size: 20px;
 }
@@ -22,7 +30,7 @@ a:focus,
 a:active,
 a.active {
     outline: 0;
-    color: #FFFF00;
+    color: #18bc9c;
 }
 
 h1,
@@ -31,7 +39,7 @@ h3,
 h4,
 h5,
 h6 {
-    text-transform: uppercase;
+    
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
 }
@@ -63,7 +71,7 @@ hr.star-light {
 
 hr.star-light:after {
     color: #fff;
-    background-color: #18bc9c;
+    background-color: #6f5499;
 }
 
 hr.star-primary {
@@ -82,7 +90,7 @@ hr.star-primary:after {
 header {
     text-align: center;
     color: #fff;
-    background: #18bc9c;
+    background: #6f5499;
 }
 
 header .container {
@@ -111,7 +119,7 @@ header .intro-text .skills {
 @media(min-width:768px) {
     header .container {
         padding-top: 200px;
-        padding-bottom: 100px;
+        padding-bottom: 30px;
     }
 
     header .intro-text .name {
@@ -181,7 +189,7 @@ section h2 {
 
 section.success {
     color: #fff;
-    background: #18bc9c;
+    background: #6f5499;
 }
 
 @media(max-width:767px) {
@@ -253,10 +261,11 @@ section.success {
 
 .btn-outline {
     margin-top: 15px;
+    width: 250px;
     border: solid 2px #fff;
     font-size: 20px;
     color: #fff;
-    background: 0 0;
+    background: #6f5499;
     transition: all .3s ease-in-out;
 }
 
@@ -265,17 +274,31 @@ section.success {
 .btn-outline:active,
 .btn-outline.active {
     border: solid 2px #fff;
-    color: #18bc9c;
+    color: #6f5499;
     background: #fff;
 }
 
 .floating-label-form-group {
-    position: relative;
+    position: center;
     margin-bottom: 0;
     padding-bottom: .5em;
     border-bottom: 1px solid #eee;
 }
-
+.searchButton input {
+    width: 550px;
+    height: 60px;
+    border-radius: 19px;
+    font-size: 40px;
+    color: #6f5499;
+}
+.searchButton button {
+    height: 60px;
+    border-radius: 5px;
+    margin-bottom: 18px;
+    font-size: 30px;
+    color: #6f5499;
+}
+}
 .floating-label-form-group input,
 .floating-label-form-group textarea {
     z-index: 1;
@@ -283,7 +306,7 @@ section.success {
     padding-right: 0;
     padding-left: 0;
     border: 0;
-    border-radius: 0;
+    border-radius: 19px;
     font-size: 1.5em;
     background: 0 0;
     box-shadow: none!important;
@@ -318,7 +341,7 @@ section.success {
 }
 
 .floating-label-form-group-with-focus label {
-    color: #18bc9c;
+    color: #6f5499;
 }
 
 form .row:first-child .floating-label-form-group {
@@ -349,10 +372,10 @@ footer .footer-below {
 
 .btn-social {
     display: inline-block;
-    width: 50px;
+    width: 111px;
     height: 50px;
     border: 2px solid #fff;
-    border-radius: 100%;
+    border-radius: 35px;
     text-align: center;
     font-size: 20px;
     line-height: 45px;
